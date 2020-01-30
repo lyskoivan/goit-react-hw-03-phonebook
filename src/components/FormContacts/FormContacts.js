@@ -36,6 +36,7 @@ export default class FormContacts extends Component {
     );
     if (sameContact) {
       alert(`Contact ${this.state.name} is already exists in your phonebook!`);
+      return;
     }
 
     const newContact = {
